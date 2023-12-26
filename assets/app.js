@@ -16,8 +16,7 @@ async function getMovies() {
 
         const {poster_path,title,vote_average,overview,} = movie;
 
-        const movieEI = document.createElement
-        ("div");
+        const movieEI = document.createElement("div");
 
         movieEI.classList.add("movie");
 
@@ -45,3 +44,7 @@ async function getMovies() {
 }
 
 getMovies()
+
+
+
+console.log('123456')

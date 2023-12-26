@@ -1,0 +1,135 @@
+header {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: #386c73;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.515);
+  position: -webkit-sticky;
+  position: sticky;
+  gap: 60px;
+}
+header .movie-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  text-shadow: 0 4px 5px rgba(0, 0, 0, 0.515);
+}
+header .movie-icon a {
+  text-decoration: none;
+  font-size: 30px;
+  color: rgba(98, 6, 6, 0.889);
+}
+header .movie-icon h3 {
+  color: rgb(239, 119, 0);
+  font-size: 24px;
+}
+header .navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+header .navbar a {
+  text-decoration: none;
+  color: rgba(245, 222, 179, 0.661);
+  font-size: 18px;
+  text-shadow: 0 4px 5px rgba(0, 0, 0, 0.515);
+}
+header .navbar:hover {
+  transform: scale(1.1);
+}
+header .form .search {
+  padding: 8px 30px;
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+  background-color: rgba(25, 27, 28, 0.5568627451);
+  color: aliceblue;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1647058824);
+}
+header .form .search:focus {
+  border: red;
+  outline: none;
+}
+header .form input {
+  width: 250px;
+  color: rgba(255, 255, 255, 0.478);
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #38535f;
+  cursor: pointer;
+}
+main .movie {
+  width: 200px;
+  height: 380px;
+  margin: 0.5rem;
+  margin-top: 50px;
+  background-color: rgba(20, 217, 197, 0.1921568627);
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.385);
+  transition: 0.5s all ease-in-out;
+}
+main .movie img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+main .movie:hover {
+  transform: scale(1.1);
+}
+main .movie-info {
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem 1rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+main .movie-info h3 {
+  margin-top: 0;
+  font-size: 18px;
+  overflow-y: scroll;
+}
+main .movie-info .range {
+  color: gold;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+  font-size: 14 px;
+}
+main .overview {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.755);
+  padding: 10px;
+  max-height: 100%;
+  transform: translateY(101%);
+  transition: transform 0.3s ease-in;
+  overflow: scroll;
+}
+
+.movie:hover .overview {
+  transform: translateY(0);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+}/*# sourceMappingURL=style.css.map */

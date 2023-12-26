@@ -1,0 +1,73 @@
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #38535f;
+  cursor: pointer;
+
+  .movie {
+    width: 200px;
+    height: 380px;
+    margin: 0.5rem;
+    margin-top: 50px;
+    background-color: #14d9c531;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.385);
+    transition: 0.5s all ease-in-out;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+    }
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  .movie-info {
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    
+    padding: 0.5rem 1rem 1rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+     
+    h3 {
+      margin-top: 0;
+      font-size: 18px;
+      overflow-y: scroll;
+    }
+  
+    .range {
+      color: gold;
+      
+      letter-spacing: 1px;
+      display: flex;
+      justify-content: center;
+      gap: 3px;
+      font-size: 14 px;
+    }
+  }
+
+  .overview {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.755);
+    padding: 10px;
+    max-height: 100%;
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in;
+    overflow: scroll;
+    
+  }
+}
+
+.movie:hover .overview {
+  transform: translateY(0);
+}
